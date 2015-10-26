@@ -1,0 +1,22 @@
+{
+  "name": "shopping-basket",
+  "version": "0.0.0",
+  "authors": [
+    "dns sandas <eurodns@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-route": "~1.4.7",
+    "normalize-css": "~3.0.3",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "~0.14.3",
+    "angular-sanitize": "~1.4.7"
+  }
+}

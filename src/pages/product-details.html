@@ -1,0 +1,17 @@
+<navigation></navigation>
+
+<!--<nav class="col-md-12">-->
+    <!--<a href="#/">&lt; Home</a>-->
+<!--</nav>-->
+
+<product-details>
+    <figure class="col-md-5">
+        <img ng-src="{{ product.img }}">
+    </figure>
+    <div class="col-md-7">
+        <h1 ng-bind-html="product.name"></h1>
+
+        <div ng-bind-html="product.desc"></div>
+        <button class="btn btn-primary">buy</button>
+    </div>
+</product-details>
