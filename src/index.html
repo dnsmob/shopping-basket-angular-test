@@ -28,7 +28,7 @@
 
         <header>
             <h1><a href="#/">iShop</a></h1>
-            <a href="#basket" class="btn btn-primary">View basket <span ng-class="{ show : total > 0 }">{{ total }}</span></a>
+            <a href="#basket" class="btn btn-primary">View basket <span ng-show="units > 0">{{ units }}</span></a>
         </header>
 
         <main ng-view>

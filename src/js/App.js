@@ -35,6 +35,7 @@
 		$scope.purchased = {};
 		$scope.totalPrice = 0;
 		$scope.deliveryCost = 0;
+		$scope.units = 0;
 
 		$scope.add = function (id) {
 			if (typeof $scope.purchased[ id ] === 'undefined') {
@@ -79,7 +80,7 @@
 			$scope.purchased = {};
 			$scope.totalPrice = 0;
 			$scope.deliveryCost = 0;
-			top.location = '#confirm'
+			top.location = '#confirm';
 		};
 
 		$scope.$watch ('purchased', function (newVal, oldVal) {
@@ -90,13 +91,14 @@
 
 		function updateTotal () {
 			$scope.totalPrice = 0;
+			$scope.units = 0;
 			for (var key in $scope.purchased) {
 				if ($scope.purchased.hasOwnProperty (key)) {
 					var item = $scope.purchased [ key ];
+					$scope.units += item.count;
 					$scope.totalPrice += (item.details.price * item.count) + $scope.deliveryCost;
 				}
 			}
-			console.log ($scope.totalPrice);
 		}
 
 
