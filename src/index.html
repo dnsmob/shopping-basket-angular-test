@@ -24,14 +24,14 @@
 
     </head>
 
-    <body>
+    <body ng-controller="MainController" class="ng-cloak">
 
         <header>
             <h1><a href="#/">iShop</a></h1>
-            <shopping-cart-peak></shopping-cart-peak>
+            <a href="#basket" class="btn btn-primary">View basket <span ng-class="{ show : total > 0 }">{{ total }}</span></a>
         </header>
 
-        <main ng-view ng-controller="MainController">
+        <main ng-view>
         </main>
 
         <!-- @ifdef dev -->

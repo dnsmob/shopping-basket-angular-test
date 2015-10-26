@@ -8,6 +8,29 @@ header h1 a, header h1 a:hover, header h1 a:active {
     color: #000;
 }
 
+header {
+    display: flex;
+    align-items: baseline;
+}
+
+header h1 {
+    flex: 1;
+}
+
+header button {
+    flex-grow: 0;
+    height: 100%;
+}
+
+header button span {
+    font-weight: bold;
+    display: none;
+}
+
+header button span.show {
+    display: inline;
+}
+
 product-list {
     display: flex;
     flex-wrap: wrap;
@@ -146,4 +169,63 @@ product-details button {
     text-transform: uppercase;
     width: 40%;
     margin-top: 30px;
+}
+
+basket {
+    display: flex;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-direction: column;
+}
+
+basket > div {
+    flex: 1;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+basket > div:last-child {
+    margin-bottom: initial;
+}
+
+basket > div span {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+basket h3 {
+    margin: 0;
+    flex: 1;
+}
+
+basket button.more:before {
+    content: '+';
+    color: #fff !important;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+basket button.less:before {
+    content: '-';
+    color: #fff !important;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+basket button.del:before {
+    color: #fff;
+    content: '\2716'
+}
+
+.text-right {
+    text-align: right;
+}
+
+.final-cost {
+    font-size: 25px;
+    padding: 15px 0;
+    clear:both;
 }
