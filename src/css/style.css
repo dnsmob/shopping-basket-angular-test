@@ -227,5 +227,52 @@ basket button.del:before {
 .final-cost {
     font-size: 25px;
     padding: 15px 0;
-    clear:both;
+    clear: both;
+}
+
+delivery {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+delivery > div {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+delivery > div > div {
+    flex: 1;
+}
+
+.delivery-selected {
+    color: #fff;
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.foot-checkout {
+    display: flex;
+    clear: both;
+    padding: 15px 0;
+    align-items: flex-end;
+}
+
+.foot-checkout > div:first-child {
+    flex: 1;
+}
+
+preview, confirm {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+confirm {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
