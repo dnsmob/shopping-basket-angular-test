@@ -1,0 +1,17 @@
+<preview class="col-md-12">
+    <div ng-repeat="item in purchased">
+        <b>&pound;{{ item.count * item.details.price}}</b> - <span ng-bind-html="item.details.name"></span> x {{ item.count }}
+    </div>
+
+    <div>Delivery costs: &pound;{{ deliveryCost }}</div>
+</preview>
+
+<div class="foot-checkout col-md-12">
+    <div>
+        <a href="#basket" class="btn btn-primary">Edit order</a>
+    </div>
+
+    <div class="text-right">
+        <button class="btn btn-primary co-md-5" ng-click="reset ()">Place order</button>
+    </div>
+</div>

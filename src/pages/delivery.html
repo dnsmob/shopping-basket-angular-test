@@ -1,0 +1,34 @@
+<delivery class="col-md-12">
+    <div ng-class="{ 'delivery-selected' : deliveryCost === 20 }">
+        <div>
+            <span>Quicker delivery</span>
+            <b>&pound;20</b>
+        </div>
+        <button class="btn btn-primary" ng-click="setDelivery (20)">Choose</button>
+    </div>
+    <div ng-class="{ 'delivery-selected' : deliveryCost === 5 }">
+        <div>
+            <span>Slower delivery</span>
+            <b>&pound;5</b>
+        </div>
+        <button class="btn btn-primary" ng-click="setDelivery (5)">Choose</button>
+    </div>
+    <div ng-class="{ 'delivery-selected' : deliveryCost === 1 }">
+        <div>
+            <span>Super slow delivery</span>
+            <b>&pound;1</b>
+        </div>
+        <button class="btn btn-primary" ng-click="setDelivery (1)">Choose</button>
+    </div>
+</delivery>
+
+<div class="foot-checkout col-md-12">
+    <div>
+        <a href="#basket" class="btn btn-primary">View basket</a>
+    </div>
+
+    <div class="text-right" ng-show="deliveryCost > 0">
+        <div class="final-cost"><span>Total:</span> <b>&pound;{{ totalPrice }}</b></div>
+        <a href="#preview" class="btn btn-primary">View order</a>
+    </div>
+</div>

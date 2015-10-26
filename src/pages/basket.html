@@ -1,0 +1,19 @@
+<basket class="col-md-12">
+    <div ng-repeat="item in purchased track by $index">
+        <h3><a href="#product-details/{{ item.details.id }}" ng-bind-html="item.details.name"></a></h3>
+
+        <div>
+            <span>&pound;{{ item.count * item.details.price }}</span>
+            <button class="btn btn-primary more" ng-click="add(item.details.id)"></button>
+            <button class="btn btn-primary less" ng-click="remove(item.details.id)"></button>
+            <span>{{ item.count }}</span>
+            <button class="btn btn-danger del" ng-click="del(item.details.id)"></button>
+        </div>
+    </div>
+</basket>
+
+
+<div class="text-right" ng-show="purchasedAsArray().length > 0">
+    <div class="final-cost"><span>Total:</span> <b>&pound;{{ totalPrice }}</b></div>
+    <a href="#delivery" class="btn btn-primary">Delivery costs</a>
+</div>
