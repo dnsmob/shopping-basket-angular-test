@@ -40,6 +40,10 @@ product-list {
     padding-bottom: 15px;
 }
 
+product-list h4 {
+    text-align: center;
+}
+
 product {
     flex-shrink: 0;
     display: flex;

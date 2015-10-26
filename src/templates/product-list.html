@@ -2,6 +2,7 @@
     <a href="#product-details/{{ item.id }}">
         <figure style="background-image: url({{ item.img }})"></figure>
         <h3 ng-bind-html="item.name"></h3>
+        <h4>&pound;{{ item.price }}</h4>
     </a>
     <button class="btn btn-primary" ng-click="add (item.id)">buy</button>
 </product>

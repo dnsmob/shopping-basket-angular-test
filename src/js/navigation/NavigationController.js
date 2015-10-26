@@ -6,7 +6,5 @@
 		var category = ProductListModel.getProductDetails ($routeParams.id);
 		$scope.categories = NavigationModel.getCategories (category ? category.type : null);
 
-		//console.log ('nav scope', $routeParams.id, $scope.categories);
-
 	} ]);
 }) ();
