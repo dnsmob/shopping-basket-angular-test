@@ -47,7 +47,7 @@ module.exports = function (grunt) {
 		concat : {
 			js : {
 				src : [
-					'bower_components/angularjs/angular.js',
+					'bower_components/angular/angular.js',
 					'bower_components/angular-bootstrap/ui-bootstrap.js',
 					'bower_components/angular-route/angular-route.js',
 					'bower_components/angular-sanitize/angular-sanitize.js',
