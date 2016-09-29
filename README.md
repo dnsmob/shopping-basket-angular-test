@@ -1,4 +1,4 @@
-# shopping-basket-demo
+# shopping-basket-angular-test
 
 from the checked out project terminal prompt    
 run ` npm install `    
