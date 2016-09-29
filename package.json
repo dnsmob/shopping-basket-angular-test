@@ -7,6 +7,7 @@
     "bower": "*"
   },
   "devDependencies": {
+    "bower": "^1.7.9",
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-connect": "^0.11.2",
