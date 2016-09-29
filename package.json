@@ -17,7 +17,7 @@
     "grunt-script-link-tags": "^1.0.2"
   },
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install && grunt dev"
   },
   "author": "",
   "license": "ISC"

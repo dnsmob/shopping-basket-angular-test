@@ -99,7 +99,6 @@ module.exports = function (grunt) {
 			}
 		},
 
-
 		watch : {
 			preprocess : {
 				files : [ 'src/index.html' ],
@@ -126,7 +125,8 @@ module.exports = function (grunt) {
 		connect : {
 			dev : {
 				options : {
-					base : 'dev/'
+					base : 'dev/',
+					open: true
 				}
 			},
 			dist : {
@@ -154,6 +154,7 @@ module.exports = function (grunt) {
 		grunt.task.run (devTasks);
 	});
 	grunt.registerTask ('dev', function (){
+		grunt.task.run ('init');
 		grunt.task.run (devTasks);
 		grunt.task.run ('tags', 'connect:dev', 'watch');
 	});
